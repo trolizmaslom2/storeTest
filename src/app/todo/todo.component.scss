@@ -1,0 +1,15 @@
+.row{
+  display: flex;
+  align-items: center;
+  button{
+    margin-left: 12px;
+    margin-bottom: 1.34375em;
+  }
+}
+:host{
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: block;
+  border: 1px solid #2c2c2c;
+}

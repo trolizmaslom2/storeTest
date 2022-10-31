@@ -1,0 +1,12 @@
+<div class="row">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Akita test</mat-label>
+    <input matInput placeholder="Ex. Pizza" [formControl]="name">
+  </mat-form-field>
+  <button mat-button color="primary" (click)="addItem()">Primary</button>
+</div>
+<ul>
+  <li *ngFor="let item of items$ | async">
+    <mat-checkbox class="example-margin" (change)="toggle(item.id)" [checked]="item.checked">{{item.name}}</mat-checkbox>
+  </li>
+</ul>

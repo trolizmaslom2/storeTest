@@ -1,7 +1,8 @@
+
 export namespace Todo {
   export class Add {
     static readonly type = '[Todo] Add';
-    constructor(public payload: any) {}
+    constructor(public payload: string) {}
   }
 
   export class Edit {
@@ -9,8 +10,9 @@ export namespace Todo {
     constructor(public payload: any) {}
   }
 
-  export class FetchAll {
-    static readonly type = '[Todo] Fetch All';
+  export class Toggle {
+    static readonly type = '[Todo] Toggle';
+    constructor(public id: number) {}
   }
 
   export class Delete {
